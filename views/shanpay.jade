@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+    form(id='paysubmit',name='paysubmit', action='#{url}', accept-charset='utf-8' ,method='POST')
+        each item in props
+            input(type='hidden', name='#{item.key}', value='#{item.value}')
+    script.
+        //setTimeout(function () {
+            document.forms['paysubmit'].submit();
+        //},3000)

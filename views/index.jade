@@ -1,0 +1,64 @@
+doctype true
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(href='images/style.css', rel='stylesheet', type='text/css')
+    title 云通付即时到账交易接口快速通道
+  body(style='background:#F3F3F4')
+    br
+    br
+    table.tb_style(border='0', cellpadding='0', cellspacing='0')
+      form#shanpayment(action='shanpay.php', method='post', name='shanpayment', target='_blank')
+        tr
+          td.td_border(width='210', height='50')
+            a(href='http://www.passpay.net')
+              img(src='images/logo.png', border='0')
+          td.td_border(width='412')  
+          td.td_border(width='178')
+            strong
+              a(href='http://www.passpay.net') 官方网站
+    table.tb_style(border='0', cellpadding='0', cellspacing='0')
+      form(name='shanpayment', action='/pay/shanpay', method='post', target='_blank')
+        tr
+          td.td_title(height='50', colspan='3')
+            span.title 云通付即时到账交易接口快速通道
+        tr
+          td.td_border(height='50')
+            font(color='#FF0000') *
+            | 商品订单号：
+          td.td_border(colspan='2')
+            input(name='WIDout_trade_no', type='text', value='', size='35')
+            font(color='#FF0000') * 必填
+            |     商户网站订单系统中唯一订单号
+        tr
+          td.td_border(height='50')
+            font(color='#FF0000') *
+            | 商品的名称：
+          td.td_border(colspan='2')
+            input(name='WIDsubject', type='text', value='购买云通付', size='35')
+            font(color='#FF0000') * 必填
+            |     商户网站的商品名称
+        tr
+          td.td_border(height='50')
+            font(color='#FF0000') *
+            | 交易的金额：
+          td.td_border(colspan='2')
+            input(name='WIDtotal_fee', type='text', value='0.1', size='35')
+            font(color='#FF0000') * 必填
+            |     商品的交易金额
+        tr
+          td.td_border(height='100')
+            font(color='#FF0000') *
+            | 商品的说明:
+          td.td_border(height='80', colspan='2')
+            textarea.L_r_content(name='WIDbody', cols='35', rows='10') 云通付收银助你秒开发...
+        tr
+          td.td_border(height='50')  
+          td.td_border
+            input#addnew.btn_save(type='submit', name='Submit', value='立即下单')
+          td.td_border  
+    .bottom
+      | Powered BY
+      a(href='http://www.passpay.net', target='_blank') 云通付
+      |     © 2013-2016  
+      a(href='http://www.passpay.net', target='_blank') PassPAY Inc.

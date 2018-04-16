@@ -1,0 +1,21 @@
+body{
+	background: #f0f0f0;
+}
+.content{
+	width: 1200px;
+	height: 550px;
+	background: #fff;
+	border-radius: 10px;
+	margin: 64px auto 0;
+	display: flex;
+}
+.content_L{
+	width: 272px;
+	height: 100%;
+	background: #4a7c7e;
+}
+.content_R{
+	width: 982px;
+	height: 100%;
+	outline: 1px solid #FF981E;
+}

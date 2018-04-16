@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    #userInfo {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <input type="text" id="user" value="chenanjie">
+    <input type="password" id="password" value="chenanjie123">
+    <button id="submit">登录</button>
+    <div id="userInfo">
+        <span id="userName"></span>
+        <a href="/index" id="recharge">充值</span>
+    </div>
+    <br/>
+
+    <span id="downloadFile">下载</span>
+
+</body>
+<script>
+    $(function () {
+        var downloadFile = $('#downloadFile')
+        downloadFile.on('click', function () {
+            $("body").append($("<iframe/>").attr('src', '/file/download').css('display', 'none'))
+        })
+        var submitBtn = $('#submit')
+        var userName = $('#userName')
+        var userInfo = $('#userInfo')
+        submitBtn.on('click', function () {
+            var user = $('#user').val()
+            var passWord = $('#password').val()
+            $.ajax({
+                url: '/users/login',
+                type: 'post',
+                data: {
+                    userName: user,
+                    passWord: passWord
+                },
+                success: function (data) {
+                    console.log(data)
+                    if (data.data) {
+                        userName.html(data.userName)
+                        userInfo.show()
+                    } else {
+                        userName.html('')
+                        userInfo.hide()
+                    }
+                }
+            })
+        })
+    })
+</script>
+
+</html>

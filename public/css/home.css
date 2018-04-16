@@ -1,0 +1,128 @@
+.Zj{
+	height: 100%;
+	background: #f0f0f0;
+}
+.content{
+	width: 1200px;
+	margin: 0 auto 300px;
+	padding-top: 30px;
+}
+.C_title{
+	width: 100%;
+	height: 40px;
+	background: #e6e6e6;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.C_title p{
+	margin-left: 10px;
+}
+.C_title ul{
+	width: 596px;
+	display: flex;
+}
+.C_title ul li:nth-child(2){
+	margin: 0 116px;
+}
+.C_content{
+	width: 100%;
+	height: 120px;
+	border-bottom: 1px solid #e2e2e2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.C_content ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 600px;
+}
+.C_content_D{
+	display: flex;
+	align-items: center;
+}
+.C_content_li1{
+	width: 40px;
+	height: 40px;
+	background: #6cb4c7;
+	line-height: 40px;
+	text-align: center;
+	font-size: 24px;
+	color: #fefefe;
+	margin: 0 20px 0 14px;
+}
+.C_content_li2{
+	font-size: 20px;
+	color: #333333;
+}
+.C_content_li2 i{
+	padding-right: 5px;
+}
+.C_content_li3{
+	display: flex;
+	align-items: center;
+}
+.C_content_li3 span{
+	font-size: 14px;
+	color: #999999;
+	margin: 0 35px 0 10px;
+}
+.C_content_li3 label{
+	font-size: 14px;
+	color: #999999;
+	margin: 0 114px 0 9px;
+}
+.li_img1{
+	width: 25px;
+	height: 25px;
+}
+.li_img2{
+	width: 25px;
+	height: 24px;
+}
+.C_content_det{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 600px;
+}
+.C_content_det_L{
+	/*width: 428px;*/
+	width: 406px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.C_content_det_L a{
+	text-decoration:underline;
+	color: #4a7c7e;
+	font-size: 14px;
+}
+/*.C_content_det_R{
+	display: flex;
+	align-items: center;
+}*/
+.C_content_det_D{
+	display: flex;
+	flex-direction:column-reverse;
+	align-items: center;
+}
+.C_content_det_D img{
+	width: 28px;
+	height: 30px;
+}
+.C_content_det_D p{
+	font-size: 12px;
+	color: #333333;
+	line-height: 12px;
+	margin-top: 8px;
+}
+.C_content_det_L_P{
+	font-size: 14px;
+	color: #999999;
+}
+#G_go{
+	margin-right: 56px;
+}
