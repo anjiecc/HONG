@@ -24,7 +24,7 @@ const config = {
     // 发送邮箱配置文件
     mailConfig: {
         user: '604526279@qq.com',
-        passWord: 'mejriqtlepbybbdb',
+        passWord: 'xxmejriqtlepbybbdb',
         subject: '重置密码',
         content: function(code) {
             return (
